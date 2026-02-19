@@ -1,16 +1,93 @@
-# React + Vite
+# 🛒 Shopping Forms Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Shopping List application demonstrating controlled components, dynamic search functionality, category filtering, and form handling using modern React concepts.
 
-Currently, two official plugins are available:
+This lab focuses on mastering React forms, state management, event handling, and component communication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Shopping Forms Lab extends a basic Shopping List application by adding:
 
-## Expanding the ESLint configuration
+- Dynamic search functionality (updates while typing)
+- Category filtering
+- A controlled form to add new items
+- Proper state management using React Hooks
+- Component-based architecture
+- Automated test compatibility (Jest & React Testing Library)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Technologies Used
+
+- React
+- JavaScript (ES6+)
+- React Hooks (`useState`)
+- CSS
+- Jest
+- React Testing Library
+- Node.js
+- Git & GitHub
+
+---
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── SearchBar.jsx
+│ ├── Filter.jsx
+│ ├── ItemForm.jsx
+│ ├── ItemList.jsx
+│ └── ShoppingItem.jsx
+├── data/
+│ └── initialItems.js
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+---
+
+## ✨ Features
+
+### 🔎 Dynamic Search
+
+- Filters items in real time while typing
+- Case-insensitive matching
+- Controlled input component
+
+### 🏷 Category Filter
+
+- Dropdown selection
+- Filters items based on category
+- Works together with search functionality
+
+### ➕ Add New Items
+
+- Controlled form inputs
+- Validates empty input
+- Automatically updates list
+- Resets form after submission
+
+### 📋 Dynamic List Rendering
+
+- Uses `.map()` to render items
+- Displays fallback message when no items match
+
+---
+
+## 🧠 Core React Concepts Practiced
+
+- Initializing state with `useState`
+- Controlled components
+- Handling form submission
+- Preventing default form behavior
+- Lifting state up
+- Passing data and callback functions as props
+- Conditional rendering
+- Filtering arrays
+- Event handling
+
+---
